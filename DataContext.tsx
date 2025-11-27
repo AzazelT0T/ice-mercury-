@@ -36,6 +36,12 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   useEffect(() => {
     settingsRef.current = settings;
+    // Apply dark mode class to html element
+    if (settings.darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, [settings]);
 
   /**

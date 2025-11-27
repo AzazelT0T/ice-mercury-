@@ -6,6 +6,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   humidityMax: 60.0,
   consecutiveViolationsTrigger: 3, // Requires 3 seconds of violation
   primaryColor: 'cyan', 
+  darkMode: false,
 };
 
 export const THEME_COLORS = [

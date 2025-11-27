@@ -48,4 +48,5 @@ export interface AppSettings {
   humidityMax: number;
   consecutiveViolationsTrigger: number; // How many bad readings in a row
   primaryColor: string; // Tailwind color name
+  darkMode: boolean;
 }
